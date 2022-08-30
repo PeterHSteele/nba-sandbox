@@ -1,0 +1,7 @@
+.contentPanel{
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px 0 #dadada;
+  padding: 1em;
+  flex: 0 0 47%;
+  background: #fff;
+}
