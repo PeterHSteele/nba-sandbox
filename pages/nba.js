@@ -21,7 +21,7 @@ const DListRow = ({term, description}) => {
   )
 }
 
-export default function(){
+export default function NBA (){
   const [players, setPlayers] = useState([
  {id: 73, firstname: 'Anthony', lastname: 'Brown', },
  {id: 74, firstname: 'Bobby', lastname: 'Brown',  },
@@ -137,13 +137,13 @@ export default function(){
         <div className={styles.sidebar}>
           <h1 className={styles.pageTitle}>Look Up an NBA Player</h1>
           <form className={styles.playerForm}>
-            <label className={styles.label} htmlFor="last-name-input">Player's Last Name</label>
+            <label className={styles.label} htmlFor="last-name-input">Player&apos;s Last Name</label>
             <input className={styles.textInput} placeholder="Tatum" type="text" id="last-name-input" onChange={e=>setLastName(e.target.value)} value={lastName} />
             <button className={styles.submitButton} type="button" onClick={sendFormData}>Submit</button>
           </form>
           { players.length ?
             <div className={styles.playerLookupContainer}>
-              <p>Showing {players.length} players with last name "{currentSearch}"</p>  
+              <p>Showing {players.length} players with last name &quot;{currentSearch}&quot;</p>  
               <ul className={styles.playerList}>
               {players.map((e,i)=>{
                   return (
@@ -201,8 +201,6 @@ export default function(){
                 <DListRow term="Rebounds" description={gamestats[featuredGame].defReb + gamestats[featuredGame].offReb}/>
                 <DListRow term="Assists" description={gamestats[featuredGame].assists}/>
                 <DListRow term="Plus/Minus" description={gamestats[featuredGame].plusMinus}/>
-                
-                <div></div>
               </dl>
             </div>
           )}
