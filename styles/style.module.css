@@ -1,0 +1,24 @@
+.label{
+  color: #444;
+  text-transform: uppercase;
+}
+
+.submitButton{
+  background: #203db9;
+  padding: 8px 4px;
+  color: #fff;
+  border: 2px solid #203db9;
+  border-radius: 4px;
+  width: 160px;
+  font-size: 16px;
+  transition: .1s all;
+}
+
+.textInput{
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin: .25em 0;
+  font-size: 20px;
+  padding: 12px 6px;
+}
